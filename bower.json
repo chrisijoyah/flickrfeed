@@ -1,0 +1,10 @@
+{
+  "name": "flickrfeed",
+  "description": "A flickr feed app.",
+  "dependencies": {
+    "angular": "~1.4.8",
+    "bootstrap": "~3.3.6",
+    "angular-ui-router": "~0.2.15",
+    "angular-sanitize": "~1.4.8"
+  }
+}

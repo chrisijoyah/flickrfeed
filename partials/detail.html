@@ -1,0 +1,21 @@
+<div class="row">
+	<div class="col-md-12">
+		<h1>Flickr Public Feed.</h1>
+	</div>
+</div>
+<div class="row" ng-controller="DetailController">
+	<div class="col-md-12">
+		<a ui-sref="list" class="btn btn-primary btn-back">Back</a>
+		<h2><a href="{{ item.link }}" target="_blank">{{ item.title }}</a></h2>
+		<div class="media">
+			<div class="media-left">
+				<img class="media-object" ng-src="{{ item.media.m }}" alt="{{ item.title }}" title="{{ item.title }}" class="img-responsive">
+			</div>
+			<div class="media-body">
+				<p><a href="{{ author_url(item.author_id) }}" target="_blank"><img ng-src="{{ avatar(item.author_id) }}"></a>   |  Published: {{ item.published | date: "d MMM 'at' h:mm a" }} </p>
+				<p><a href="{{ item.link }}" target="_blank">View on Flickr</a></p>
+				<p>Tags: {{ item.tags }}</p>
+				</div>
+		</div>				
+	</div>
+</div>
